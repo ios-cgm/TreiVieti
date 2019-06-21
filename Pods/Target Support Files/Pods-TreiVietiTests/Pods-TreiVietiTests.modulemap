@@ -1,0 +1,6 @@
+framework module Pods_TreiVietiTests {
+  umbrella header "Pods-TreiVietiTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

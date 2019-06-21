@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		47086CFB22BD0A4600958CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086CFA22BD0A4600958CBB /* AppDelegate.swift */; };
-		47086CFD22BD0A4600958CBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086CFC22BD0A4600958CBB /* ViewController.swift */; };
-		47086D0022BD0A4600958CBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47086CFE22BD0A4600958CBB /* Main.storyboard */; };
 		47086D0222BD0A4700958CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47086D0122BD0A4700958CBB /* Assets.xcassets */; };
 		47086D0522BD0A4700958CBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47086D0322BD0A4700958CBB /* LaunchScreen.storyboard */; };
 		47086D1022BD0A4700958CBB /* TreiVietiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086D0F22BD0A4700958CBB /* TreiVietiTests.swift */; };
 		47086D1B22BD0A4700958CBB /* TreiVietiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086D1A22BD0A4700958CBB /* TreiVietiUITests.swift */; };
+		47086D2C22BD0A8700958CBB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47086D2B22BD0A8700958CBB /* Login.storyboard */; };
+		47086D2E22BD0A9300958CBB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47086D2D22BD0A9300958CBB /* Home.storyboard */; };
+		47086D3022BD0AA700958CBB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086D2F22BD0AA700958CBB /* LoginViewController.swift */; };
+		47086D3322BD0B4500958CBB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086D3222BD0B4500958CBB /* HomeViewController.swift */; };
+		A716AB930ED087C7BC6A48C5 /* Pods_TreiVietiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA0A882D74DD55850F04061 /* Pods_TreiVietiUITests.framework */; };
+		A8A05D629BE431268236A26B /* Pods_TreiVieti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3914E13DC12BC5B5DE631F7 /* Pods_TreiVieti.framework */; };
+		DF3AD54E42CE7FA6EEFEEEF0 /* Pods_TreiVietiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC412FED90E20B09CFE17C33 /* Pods_TreiVietiTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00DB41329BB840CAB8433166 /* Pods-TreiVieti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreiVieti.debug.xcconfig"; path = "Target Support Files/Pods-TreiVieti/Pods-TreiVieti.debug.xcconfig"; sourceTree = "<group>"; };
 		47086CF722BD0A4600958CBB /* TreiVieti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreiVieti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47086CFA22BD0A4600958CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47086CFC22BD0A4600958CBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		47086CFF22BD0A4600958CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47086D0122BD0A4700958CBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47086D0422BD0A4700958CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47086D0622BD0A4700958CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +51,18 @@
 		47086D1622BD0A4700958CBB /* TreiVietiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreiVietiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47086D1A22BD0A4700958CBB /* TreiVietiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreiVietiUITests.swift; sourceTree = "<group>"; };
 		47086D1C22BD0A4700958CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47086D2B22BD0A8700958CBB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		47086D2D22BD0A9300958CBB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		47086D2F22BD0AA700958CBB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		47086D3222BD0B4500958CBB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		82D66BE8F029D74B07950320 /* Pods-TreiVietiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreiVietiUITests.debug.xcconfig"; path = "Target Support Files/Pods-TreiVietiUITests/Pods-TreiVietiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		977F2F7EC965A35E4045C2F3 /* Pods-TreiVietiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreiVietiTests.debug.xcconfig"; path = "Target Support Files/Pods-TreiVietiTests/Pods-TreiVietiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C8096DF5147BF292AD37817 /* Pods-TreiVietiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreiVietiUITests.release.xcconfig"; path = "Target Support Files/Pods-TreiVietiUITests/Pods-TreiVietiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B689AB5241F5F68ABD479F5E /* Pods-TreiVietiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreiVietiTests.release.xcconfig"; path = "Target Support Files/Pods-TreiVietiTests/Pods-TreiVietiTests.release.xcconfig"; sourceTree = "<group>"; };
+		BEC56752DE9AE8BF6FFC49B8 /* Pods-TreiVieti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreiVieti.release.xcconfig"; path = "Target Support Files/Pods-TreiVieti/Pods-TreiVieti.release.xcconfig"; sourceTree = "<group>"; };
+		CBA0A882D74DD55850F04061 /* Pods_TreiVietiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreiVietiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3914E13DC12BC5B5DE631F7 /* Pods_TreiVieti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreiVieti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC412FED90E20B09CFE17C33 /* Pods_TreiVietiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreiVietiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A05D629BE431268236A26B /* Pods_TreiVieti.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF3AD54E42CE7FA6EEFEEEF0 /* Pods_TreiVietiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A716AB930ED087C7BC6A48C5 /* Pods_TreiVietiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +100,8 @@
 				47086D0E22BD0A4700958CBB /* TreiVietiTests */,
 				47086D1922BD0A4700958CBB /* TreiVietiUITests */,
 				47086CF822BD0A4600958CBB /* Products */,
+				6959DC73A166CFCC73A51002 /* Pods */,
+				A4ABBA2EF33A06D6960BD5D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +118,10 @@
 		47086CF922BD0A4600958CBB /* TreiVieti */ = {
 			isa = PBXGroup;
 			children = (
-				47086CFA22BD0A4600958CBB /* AppDelegate.swift */,
-				47086CFC22BD0A4600958CBB /* ViewController.swift */,
-				47086CFE22BD0A4600958CBB /* Main.storyboard */,
-				47086D0122BD0A4700958CBB /* Assets.xcassets */,
-				47086D0322BD0A4700958CBB /* LaunchScreen.storyboard */,
 				47086D0622BD0A4700958CBB /* Info.plist */,
+				47086CFA22BD0A4600958CBB /* AppDelegate.swift */,
+				47086D3122BD0B1D00958CBB /* ApplicationLogic */,
+				47086D2822BD0A7600958CBB /* Screen */,
 			);
 			path = TreiVieti;
 			sourceTree = "<group>";
@@ -125,6 +144,66 @@
 			path = TreiVietiUITests;
 			sourceTree = "<group>";
 		};
+		47086D2822BD0A7600958CBB /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				47086D2A22BD0A7E00958CBB /* Home */,
+				47086D2922BD0A7A00958CBB /* Login */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		47086D2922BD0A7A00958CBB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				47086D2F22BD0AA700958CBB /* LoginViewController.swift */,
+				47086D2B22BD0A8700958CBB /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		47086D2A22BD0A7E00958CBB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				47086D3222BD0B4500958CBB /* HomeViewController.swift */,
+				47086D2D22BD0A9300958CBB /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		47086D3122BD0B1D00958CBB /* ApplicationLogic */ = {
+			isa = PBXGroup;
+			children = (
+				47086D0122BD0A4700958CBB /* Assets.xcassets */,
+				47086D0322BD0A4700958CBB /* LaunchScreen.storyboard */,
+			);
+			path = ApplicationLogic;
+			sourceTree = "<group>";
+		};
+		6959DC73A166CFCC73A51002 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00DB41329BB840CAB8433166 /* Pods-TreiVieti.debug.xcconfig */,
+				BEC56752DE9AE8BF6FFC49B8 /* Pods-TreiVieti.release.xcconfig */,
+				977F2F7EC965A35E4045C2F3 /* Pods-TreiVietiTests.debug.xcconfig */,
+				B689AB5241F5F68ABD479F5E /* Pods-TreiVietiTests.release.xcconfig */,
+				82D66BE8F029D74B07950320 /* Pods-TreiVietiUITests.debug.xcconfig */,
+				9C8096DF5147BF292AD37817 /* Pods-TreiVietiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4ABBA2EF33A06D6960BD5D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3914E13DC12BC5B5DE631F7 /* Pods_TreiVieti.framework */,
+				FC412FED90E20B09CFE17C33 /* Pods_TreiVietiTests.framework */,
+				CBA0A882D74DD55850F04061 /* Pods_TreiVietiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47086D1F22BD0A4700958CBB /* Build configuration list for PBXNativeTarget "TreiVieti" */;
 			buildPhases = (
+				36E3C5759BB52DFD49443596 /* [CP] Check Pods Manifest.lock */,
 				47086CF322BD0A4600958CBB /* Sources */,
 				47086CF422BD0A4600958CBB /* Frameworks */,
 				47086CF522BD0A4600958CBB /* Resources */,
+				49911A66D38DE631C25FA5A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47086D2222BD0A4700958CBB /* Build configuration list for PBXNativeTarget "TreiVietiTests" */;
 			buildPhases = (
+				A6651940E6456866FBBE4EF5 /* [CP] Check Pods Manifest.lock */,
 				47086D0722BD0A4700958CBB /* Sources */,
 				47086D0822BD0A4700958CBB /* Frameworks */,
 				47086D0922BD0A4700958CBB /* Resources */,
@@ -167,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47086D2522BD0A4700958CBB /* Build configuration list for PBXNativeTarget "TreiVietiUITests" */;
 			buildPhases = (
+				FED18551C7299CAC683CD270 /* [CP] Check Pods Manifest.lock */,
 				47086D1222BD0A4700958CBB /* Sources */,
 				47086D1322BD0A4700958CBB /* Frameworks */,
 				47086D1422BD0A4700958CBB /* Resources */,
@@ -231,7 +314,8 @@
 			files = (
 				47086D0522BD0A4700958CBB /* LaunchScreen.storyboard in Resources */,
 				47086D0222BD0A4700958CBB /* Assets.xcassets in Resources */,
-				47086D0022BD0A4600958CBB /* Main.storyboard in Resources */,
+				47086D2C22BD0A8700958CBB /* Login.storyboard in Resources */,
+				47086D2E22BD0A9300958CBB /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +335,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36E3C5759BB52DFD49443596 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TreiVieti-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49911A66D38DE631C25FA5A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreiVieti/Pods-TreiVieti-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreiVieti/Pods-TreiVieti-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TreiVieti/Pods-TreiVieti-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6651940E6456866FBBE4EF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TreiVietiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FED18551C7299CAC683CD270 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TreiVietiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		47086CF322BD0A4600958CBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47086CFD22BD0A4600958CBB /* ViewController.swift in Sources */,
+				47086D3022BD0AA700958CBB /* LoginViewController.swift in Sources */,
 				47086CFB22BD0A4600958CBB /* AppDelegate.swift in Sources */,
+				47086D3322BD0B4500958CBB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +464,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		47086CFE22BD0A4600958CBB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				47086CFF22BD0A4600958CBB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		47086D0322BD0A4700958CBB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -430,10 +593,12 @@
 		};
 		47086D2022BD0A4700958CBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00DB41329BB840CAB8433166 /* Pods-TreiVieti.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TreiVieti/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,10 +612,12 @@
 		};
 		47086D2122BD0A4700958CBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC56752DE9AE8BF6FFC49B8 /* Pods-TreiVieti.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TreiVieti/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +631,7 @@
 		};
 		47086D2322BD0A4700958CBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977F2F7EC965A35E4045C2F3 /* Pods-TreiVietiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +652,7 @@
 		};
 		47086D2422BD0A4700958CBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B689AB5241F5F68ABD479F5E /* Pods-TreiVietiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +673,7 @@
 		};
 		47086D2622BD0A4700958CBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82D66BE8F029D74B07950320 /* Pods-TreiVietiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +693,7 @@
 		};
 		47086D2722BD0A4700958CBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C8096DF5147BF292AD37817 /* Pods-TreiVietiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
