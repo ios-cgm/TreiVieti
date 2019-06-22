@@ -68,11 +68,11 @@ class Networking {
         }
         let httpHeaders = ["token": token]
         let endpointURL = Endpoint.endpointURL(.profile)()
-        Alamofire.request(endpointURL, method: .get, headers: httpHeaders as? [String: Any] as! HTTPHeaders).responseJSON { response in
-            if let json = response.result.value as? [String: Any] {
-                print(json)
-            }
-        }
+//        Alamofire.request(endpointURL, method: .get, headers: httpHeaders as? [String: Any] as! HTTPHeaders).responseJSON { response in
+//            if let json = response.result.value as? [String: Any] {
+//                print(json)
+//            }
+//        }
     }
 }
 
