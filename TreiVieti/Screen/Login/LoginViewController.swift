@@ -27,8 +27,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        emailTextField.text = "tudor1@gmail.com"
-//        passwordTextField.text = "123456"
+        setupUI()
     }
 
     @IBAction func unwindToLoginVC(segue: UIStoryboardSegue) {
@@ -42,9 +41,11 @@ class LoginViewController: UIViewController {
         setLoading(true)
         network.login(loginModel: LoginModel(email: email, password: password), success: { [weak self] in
             self?.view.window?.rootViewController = UIStoryboard(name: "Home", bundle: nil).instantiateInitialViewController()
+            self?.saveEmail(email)
         }) { [weak self] (error) in
             print(error.localizedDescription)
             self?.setLoading(false)
+            self?.showErrorAlert()
         }
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -55,6 +56,26 @@ class LoginViewController: UIViewController {
         let buttonTitle = loading ? nil : "LOGIN"
         loginButton.setTitle(buttonTitle, for: .normal)
         spinnerView.isHidden = !loading
+        if loading {
+            spinnerView.startAnimating()
+        } else {
+            spinnerView.stopAnimating()
+        }
+    }
+
+    func showErrorAlert() {
+        UIAlertController.showOKAlert(from: self, message: "Credentials are invalid. Please try again.")
+    }
+    func saveEmail(_ email: String) {
+        UserDefaults.standard.setValue(email, forKey: "email")
+        UserDefaults.standard.synchronize()
+    }
+    func setupUI() {
+        spinnerView.stopAnimating()
+        spinnerView.isHidden = true
+        if let email = UserDefaults.standard.value(forKey: "email") as? String {
+            emailTextField.text = email
+        }
     }
 }
 
