@@ -14,4 +14,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func logoutButtonTapped(_ sender: Any) {
+        view.window?.rootViewController = UIStoryboard(name: "Login", bundle: nil).instantiateInitialViewController()
+    }
 }
