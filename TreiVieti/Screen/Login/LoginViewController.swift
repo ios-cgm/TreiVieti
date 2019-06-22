@@ -77,6 +77,9 @@ class LoginViewController: UIViewController {
             emailTextField.text = email
         }
     }
+    @IBAction func forgotPasswordButtonTapped(_ sender: Any) {
+        UIAlertController.showOKAlert(from: self, message: "MemoPlus?")
+    }
 }
 
 extension LoginViewController: UITextFieldDelegate {
