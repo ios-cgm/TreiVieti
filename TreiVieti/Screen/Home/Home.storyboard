@@ -33,7 +33,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="oIU-bR-WgQ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="tintColor" red="0.91372549020000005" green="0.24313725489999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="LOGOUT"/>
                                         <connections>
