@@ -37,12 +37,14 @@ class RegisterViewController: UIViewController {
             UIAlertController.showOKAlert(from: self, message: "Password should have at least 3 characters.")
             return
         }
+        setLoading(true)
         network.register(registerModel: RegisterModel(email: email, name: email, phoneNumber: "0741123123", password: password), success: { [weak self] in
             self?.network.login(loginModel: LoginModel(email: email, password: password), success: { [weak self] in
                 self?.view.window?.rootViewController = UIStoryboard(name: "Home", bundle: nil).instantiateInitialViewController()
                 self?.saveEmail(email)
             }, failure: { [weak self] (error) in
                 self?.showErrorOnRegister("Something went wrong. Please try again.")
+                self?.setLoading(false)
             })
         }) { [weak self] (error) in
             if error == AuthError.emailAlreadyTaken {
@@ -50,6 +52,7 @@ class RegisterViewController: UIViewController {
             } else {
                 self?.showErrorOnRegister("Something went wrong. Please try again.")
             }
+            self?.setLoading(false)
         }
     }
 
@@ -69,5 +72,16 @@ class RegisterViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
+    }
+
+    func setLoading(_ loading: Bool) {
+        let buttonTitle = loading ? nil : "LOGIN"
+        createAccountButton.setTitle(buttonTitle, for: .normal)
+        spinnerView.isHidden = !loading
+        if loading {
+            spinnerView.startAnimating()
+        } else {
+            spinnerView.stopAnimating()
+        }
     }
 }
