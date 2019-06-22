@@ -44,6 +44,10 @@
 		47086D3E22BE450400958CBB /* KeychainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086D3D22BE450400958CBB /* KeychainCoordinator.swift */; };
 		47086D4022BE48C400958CBB /* NetworkingErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086D3F22BE48C400958CBB /* NetworkingErrors.swift */; };
 		47086D4322BE522200958CBB /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086D4222BE522200958CBB /* Validator.swift */; };
+		512CCBB022BE628D00AF1336 /* BloodGroupsCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 512CCBAA22BE628D00AF1336 /* BloodGroupsCollectionView.m */; };
+		512CCBB122BE628D00AF1336 /* BloodGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 512CCBAD22BE628D00AF1336 /* BloodGroupCell.m */; };
+		512CCBB222BE628D00AF1336 /* BloodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 512CCBAF22BE628D00AF1336 /* BloodGroup.m */; };
+		512CCBB522BE62F400AF1336 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 512CCBB422BE62F400AF1336 /* UIColor+Extensions.m */; };
 		A716AB930ED087C7BC6A48C5 /* Pods_TreiVietiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA0A882D74DD55850F04061 /* Pods_TreiVietiUITests.framework */; };
 		A8A05D629BE431268236A26B /* Pods_TreiVieti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3914E13DC12BC5B5DE631F7 /* Pods_TreiVieti.framework */; };
 		DF3AD54E42CE7FA6EEFEEEF0 /* Pods_TreiVietiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC412FED90E20B09CFE17C33 /* Pods_TreiVietiTests.framework */; };
@@ -111,6 +115,15 @@
 		47086D3D22BE450400958CBB /* KeychainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainCoordinator.swift; sourceTree = "<group>"; };
 		47086D3F22BE48C400958CBB /* NetworkingErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingErrors.swift; sourceTree = "<group>"; };
 		47086D4222BE522200958CBB /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		512CCBA922BE628C00AF1336 /* TreiVieti-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TreiVieti-Bridging-Header.h"; sourceTree = "<group>"; };
+		512CCBAA22BE628D00AF1336 /* BloodGroupsCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodGroupsCollectionView.m; sourceTree = "<group>"; };
+		512CCBAB22BE628D00AF1336 /* BloodGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodGroup.h; sourceTree = "<group>"; };
+		512CCBAC22BE628D00AF1336 /* BloodGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodGroupCell.h; sourceTree = "<group>"; };
+		512CCBAD22BE628D00AF1336 /* BloodGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodGroupCell.m; sourceTree = "<group>"; };
+		512CCBAE22BE628D00AF1336 /* BloodGroupsCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodGroupsCollectionView.h; sourceTree = "<group>"; };
+		512CCBAF22BE628D00AF1336 /* BloodGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodGroup.m; sourceTree = "<group>"; };
+		512CCBB322BE62F400AF1336 /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
+		512CCBB422BE62F400AF1336 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
 		82D66BE8F029D74B07950320 /* Pods-TreiVietiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreiVietiUITests.debug.xcconfig"; path = "Target Support Files/Pods-TreiVietiUITests/Pods-TreiVietiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		977F2F7EC965A35E4045C2F3 /* Pods-TreiVietiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreiVietiTests.debug.xcconfig"; path = "Target Support Files/Pods-TreiVietiTests/Pods-TreiVietiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C8096DF5147BF292AD37817 /* Pods-TreiVietiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreiVietiUITests.release.xcconfig"; path = "Target Support Files/Pods-TreiVietiUITests/Pods-TreiVietiUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -229,6 +242,7 @@
 		47086D2822BD0A7600958CBB /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				512CCBA822BE626800AF1336 /* blood groups */,
 				47086D2A22BD0A7E00958CBB /* Home */,
 				47086D2922BD0A7A00958CBB /* Login */,
 			);
@@ -266,6 +280,8 @@
 				47086D0122BD0A4700958CBB /* Assets.xcassets */,
 				47086D0322BD0A4700958CBB /* LaunchScreen.storyboard */,
 				2659FCBD22BE34DA006C4174 /* UIColor+Extensions.swift */,
+				512CCBB322BE62F400AF1336 /* UIColor+Extensions.h */,
+				512CCBB422BE62F400AF1336 /* UIColor+Extensions.m */,
 			);
 			path = ApplicationLogic;
 			sourceTree = "<group>";
@@ -302,6 +318,20 @@
 				47086D4222BE522200958CBB /* Validator.swift */,
 			);
 			path = Validator;
+			sourceTree = "<group>";
+		};
+		512CCBA822BE626800AF1336 /* blood groups */ = {
+			isa = PBXGroup;
+			children = (
+				512CCBAB22BE628D00AF1336 /* BloodGroup.h */,
+				512CCBAF22BE628D00AF1336 /* BloodGroup.m */,
+				512CCBAC22BE628D00AF1336 /* BloodGroupCell.h */,
+				512CCBAD22BE628D00AF1336 /* BloodGroupCell.m */,
+				512CCBAE22BE628D00AF1336 /* BloodGroupsCollectionView.h */,
+				512CCBAA22BE628D00AF1336 /* BloodGroupsCollectionView.m */,
+				512CCBA922BE628C00AF1336 /* TreiVieti-Bridging-Header.h */,
+			);
+			path = "blood groups";
 			sourceTree = "<group>";
 		};
 		6959DC73A166CFCC73A51002 /* Pods */ = {
@@ -399,6 +429,7 @@
 				TargetAttributes = {
 					47086CF622BD0A4600958CBB = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					47086D0A22BD0A4700958CBB = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -575,11 +606,15 @@
 				47086D4322BE522200958CBB /* Validator.swift in Sources */,
 				47086D3922BE331100958CBB /* RegisterModel.swift in Sources */,
 				47086CFB22BD0A4600958CBB /* AppDelegate.swift in Sources */,
+				512CCBB522BE62F400AF1336 /* UIColor+Extensions.m in Sources */,
 				47086D3E22BE450400958CBB /* KeychainCoordinator.swift in Sources */,
 				47086D3322BD0B4500958CBB /* HomeViewController.swift in Sources */,
 				47086D4022BE48C400958CBB /* NetworkingErrors.swift in Sources */,
 				47086D3622BE2CEE00958CBB /* NetworkingConfiguration.swift in Sources */,
 				2659FC9322BE2BC3006C4174 /* RegisterViewController.swift in Sources */,
+				512CCBB222BE628D00AF1336 /* BloodGroup.m in Sources */,
+				512CCBB122BE628D00AF1336 /* BloodGroupCell.m in Sources */,
+				512CCBB022BE628D00AF1336 /* BloodGroupsCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -747,6 +782,7 @@
 			baseConfigurationReference = 00DB41329BB840CAB8433166 /* Pods-TreiVieti.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TreiVieti/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -756,6 +792,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cgm.treivieti.TreiVieti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TreiVieti/Screen/blood groups/TreiVieti-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -766,6 +804,7 @@
 			baseConfigurationReference = BEC56752DE9AE8BF6FFC49B8 /* Pods-TreiVieti.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TreiVieti/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -775,6 +814,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cgm.treivieti.TreiVieti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TreiVieti/Screen/blood groups/TreiVieti-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
