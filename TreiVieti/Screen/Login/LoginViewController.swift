@@ -12,7 +12,9 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-
+    @IBOutlet var emailPlaceholder: UILabel!
+    @IBOutlet var passwordPlaceholder: UILabel!
+    
     let network = Networking()
 
     override func viewDidLoad() {
@@ -47,6 +49,23 @@ extension LoginViewController: UITextFieldDelegate {
         } else {
             textField.resignFirstResponder()
         }
+        return true
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField == emailTextField {
+            if let text = textField.text, text.isValidEmail() {
+                emailPlaceholder.textColor = UIColor.gray
+            } else {
+                emailPlaceholder.textColor = UIColor.appRedColor
+            }
+        }
+//        else if textField == passwordTextField {
+//            if let text = textField.text, text.isEmpty {
+//                passwordPlaceholder.textColor = UIColor.appRedColor
+//            } else {
+//                passwordPlaceholder.textColor = UIColor.gray
+//            }
+//        }
         return true
     }
 }

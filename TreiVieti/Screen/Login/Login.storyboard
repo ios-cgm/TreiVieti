@@ -230,7 +230,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="EOE-jN-zaj"/>
                     <connections>
+                        <outlet property="emailPlaceholder" destination="D1c-kX-iwj" id="uR9-2n-7bm"/>
                         <outlet property="emailTextField" destination="J9C-xE-1y5" id="Kju-9G-5Mn"/>
+                        <outlet property="passwordPlaceholder" destination="bg6-6g-PYX" id="lHV-rD-3cj"/>
                         <outlet property="passwordTextField" destination="zWK-Xw-KPo" id="K7t-Qn-PzN"/>
                     </connections>
                 </viewController>
