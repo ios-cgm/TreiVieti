@@ -12,14 +12,30 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+
+    let network = Networking()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTextField.text = "tudor1@gmail.com"
+        passwordTextField.text = "123456"
     }
 
     @IBAction func unwindToLoginVC(segue: UIStoryboardSegue) {
         print("here")
     }
 
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        guard let email = emailTextField.text, let password = passwordTextField.text else {
+            return
+        }
+
+        network.login(loginModel: LoginModel(email: email, password: password), success: {
+            print("mare success")
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }

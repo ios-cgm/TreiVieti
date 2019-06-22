@@ -30,11 +30,13 @@ class Networking {
             let decoded = try? JSONSerialization.jsonObject(with: jsonData, options: [])
             Alamofire.request(endpointURL, method: .post, parameters: decoded as? [String: Any] as! HTTPHeaders).responseJSON { response in
                 if let json = response.result.value as? [String: Any] {
-                    if let token = json["token"] as? String {
-                        KeychainCoordinator.saveToken(token: token)
+                    if let token = json["token"] as? [String: Any], let accessToken = token["accessToken"] as? String {
+                        KeychainCoordinator.saveToken(token: accessToken)
                         success()
-                    } else if json["invalid_credentials"] != nil {
+                    } else if json["error"] != nil {
                         failure(AuthError.invalidCredentials)
+                    } else {
+                        failure(AuthError.generalError)
                     }
                 } else {
                     failure(AuthError.generalError)
@@ -48,7 +50,7 @@ class Networking {
             let decoded = try? JSONSerialization.jsonObject(with: jsonData, options: [])
             Alamofire.request(endpointURL, method: .post, parameters: decoded as? [String: Any] as! HTTPHeaders).responseJSON { response in
                 if let json = response.result.value as? [String: Any] {
-                    if let token = json["token"] as? String {
+                    if let token = json["accessToken"] as? String {
                         KeychainCoordinator.saveToken(token: token)
                         success()
                     } else if json["email"] != nil {
