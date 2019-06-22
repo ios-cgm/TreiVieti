@@ -28,6 +28,29 @@
                                             <constraint firstAttribute="height" constant="200" id="ioL-F4-DVI"/>
                                         </constraints>
                                     </view>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mhn-L5-RK6">
+                                        <rect key="frame" x="0.0" y="200" width="414" height="82"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="82" id="R9I-0L-vgJ"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bII-JA-klV">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9sY-qY-mKc">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </view>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vtw-SZ-M7d">
                                         <rect key="frame" x="20" y="782" width="374" height="50"/>
                                         <constraints>
@@ -46,9 +69,12 @@
                                     <constraint firstAttribute="trailing" secondItem="Vtw-SZ-M7d" secondAttribute="trailing" constant="20" id="28H-zc-Y2O"/>
                                     <constraint firstItem="p5d-gf-07b" firstAttribute="leading" secondItem="O95-qb-1SS" secondAttribute="leading" id="4MU-5N-EdI"/>
                                     <constraint firstItem="Vtw-SZ-M7d" firstAttribute="leading" secondItem="O95-qb-1SS" secondAttribute="leading" constant="20" id="7kt-lH-8LD"/>
+                                    <constraint firstItem="mhn-L5-RK6" firstAttribute="top" secondItem="p5d-gf-07b" secondAttribute="bottom" id="NGx-9h-pFP"/>
                                     <constraint firstAttribute="bottom" secondItem="Vtw-SZ-M7d" secondAttribute="bottom" constant="30" id="a1F-if-gCy"/>
                                     <constraint firstItem="p5d-gf-07b" firstAttribute="top" secondItem="O95-qb-1SS" secondAttribute="top" id="aUB-FV-0dK"/>
+                                    <constraint firstItem="mhn-L5-RK6" firstAttribute="leading" secondItem="O95-qb-1SS" secondAttribute="leading" id="fb4-O7-iPP"/>
                                     <constraint firstAttribute="trailing" secondItem="p5d-gf-07b" secondAttribute="trailing" id="jkn-ox-Fiv"/>
+                                    <constraint firstAttribute="trailing" secondItem="mhn-L5-RK6" secondAttribute="trailing" id="wFF-CR-8ks"/>
                                 </constraints>
                             </view>
                         </subviews>
