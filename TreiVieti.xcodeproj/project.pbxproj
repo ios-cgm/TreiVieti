@@ -38,6 +38,11 @@
 		47086D2E22BD0A9300958CBB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47086D2D22BD0A9300958CBB /* Home.storyboard */; };
 		47086D3022BD0AA700958CBB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086D2F22BD0AA700958CBB /* LoginViewController.swift */; };
 		47086D3322BD0B4500958CBB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086D3222BD0B4500958CBB /* HomeViewController.swift */; };
+		47086D3622BE2CEE00958CBB /* NetworkingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086D3522BE2CEE00958CBB /* NetworkingConfiguration.swift */; };
+		47086D3922BE331100958CBB /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086D3822BE331100958CBB /* RegisterModel.swift */; };
+		47086D3B22BE445D00958CBB /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086D3A22BE445D00958CBB /* LoginModel.swift */; };
+		47086D3E22BE450400958CBB /* KeychainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086D3D22BE450400958CBB /* KeychainCoordinator.swift */; };
+		47086D4022BE48C400958CBB /* NetworkingErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47086D3F22BE48C400958CBB /* NetworkingErrors.swift */; };
 		A716AB930ED087C7BC6A48C5 /* Pods_TreiVietiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA0A882D74DD55850F04061 /* Pods_TreiVietiUITests.framework */; };
 		A8A05D629BE431268236A26B /* Pods_TreiVieti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3914E13DC12BC5B5DE631F7 /* Pods_TreiVieti.framework */; };
 		DF3AD54E42CE7FA6EEFEEEF0 /* Pods_TreiVietiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC412FED90E20B09CFE17C33 /* Pods_TreiVietiTests.framework */; };
@@ -99,6 +104,11 @@
 		47086D2D22BD0A9300958CBB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		47086D2F22BD0AA700958CBB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		47086D3222BD0B4500958CBB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		47086D3522BE2CEE00958CBB /* NetworkingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConfiguration.swift; sourceTree = "<group>"; };
+		47086D3822BE331100958CBB /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		47086D3A22BE445D00958CBB /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		47086D3D22BE450400958CBB /* KeychainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainCoordinator.swift; sourceTree = "<group>"; };
+		47086D3F22BE48C400958CBB /* NetworkingErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingErrors.swift; sourceTree = "<group>"; };
 		82D66BE8F029D74B07950320 /* Pods-TreiVietiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreiVietiUITests.debug.xcconfig"; path = "Target Support Files/Pods-TreiVietiUITests/Pods-TreiVietiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		977F2F7EC965A35E4045C2F3 /* Pods-TreiVietiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreiVietiTests.debug.xcconfig"; path = "Target Support Files/Pods-TreiVietiTests/Pods-TreiVietiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C8096DF5147BF292AD37817 /* Pods-TreiVietiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreiVietiUITests.release.xcconfig"; path = "Target Support Files/Pods-TreiVietiUITests/Pods-TreiVietiUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -247,11 +257,40 @@
 		47086D3122BD0B1D00958CBB /* ApplicationLogic */ = {
 			isa = PBXGroup;
 			children = (
+				47086D3C22BE44FC00958CBB /* Keychain */,
+				47086D3722BE32E500958CBB /* Models */,
+				47086D3422BE2C7300958CBB /* Networking */,
 				47086D0122BD0A4700958CBB /* Assets.xcassets */,
 				47086D0322BD0A4700958CBB /* LaunchScreen.storyboard */,
 				2659FCBD22BE34DA006C4174 /* UIColor+Extensions.swift */,
 			);
 			path = ApplicationLogic;
+			sourceTree = "<group>";
+		};
+		47086D3422BE2C7300958CBB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				47086D3522BE2CEE00958CBB /* NetworkingConfiguration.swift */,
+				47086D3F22BE48C400958CBB /* NetworkingErrors.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		47086D3722BE32E500958CBB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47086D3822BE331100958CBB /* RegisterModel.swift */,
+				47086D3A22BE445D00958CBB /* LoginModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		47086D3C22BE44FC00958CBB /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				47086D3D22BE450400958CBB /* KeychainCoordinator.swift */,
+			);
+			path = Keychain;
 			sourceTree = "<group>";
 		};
 		6959DC73A166CFCC73A51002 /* Pods */ = {
@@ -521,8 +560,13 @@
 				2659FC9522BE2DE8006C4174 /* AppHeaderView.swift in Sources */,
 				2659FCBE22BE34DA006C4174 /* UIColor+Extensions.swift in Sources */,
 				47086D3022BD0AA700958CBB /* LoginViewController.swift in Sources */,
+				47086D3B22BE445D00958CBB /* LoginModel.swift in Sources */,
+				47086D3922BE331100958CBB /* RegisterModel.swift in Sources */,
 				47086CFB22BD0A4600958CBB /* AppDelegate.swift in Sources */,
+				47086D3E22BE450400958CBB /* KeychainCoordinator.swift in Sources */,
 				47086D3322BD0B4500958CBB /* HomeViewController.swift in Sources */,
+				47086D4022BE48C400958CBB /* NetworkingErrors.swift in Sources */,
+				47086D3622BE2CEE00958CBB /* NetworkingConfiguration.swift in Sources */,
 				2659FC9322BE2BC3006C4174 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
