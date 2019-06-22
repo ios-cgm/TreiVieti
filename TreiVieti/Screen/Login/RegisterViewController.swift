@@ -10,9 +10,27 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
-    @IBOutlet weak var emailAddressTextField: UITextField!
-    @IBOutlet weak var confirmEmailAddress: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet var emailPlaceholder: UILabel!
+    @IBOutlet var confirmEmailPlaceholder: UILabel!
+    @IBOutlet var passwordPlaceholder: UILabel!
+
+    @IBOutlet weak var emailAddressTextField: UITextField! {
+        didSet {
+            emailAddressTextField.delegate = self
+        }
+    }
+    @IBOutlet weak var confirmEmailAddress: UITextField! {
+        didSet {
+            confirmEmailAddress.delegate = self
+        }
+    }
+
+    @IBOutlet weak var passwordTextField: UITextField!{
+        didSet {
+            passwordTextField.delegate = self
+        }
+    }
+
 
     @IBOutlet weak var createAccountButton: UIButton!
 
@@ -83,5 +101,30 @@ class RegisterViewController: UIViewController {
         } else {
             spinnerView.stopAnimating()
         }
+    }
+}
+
+extension RegisterViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField == emailAddressTextField {
+            if let text = textField.text, text.isValidEmail() {
+                emailPlaceholder.textColor = UIColor.gray
+            } else {
+                emailPlaceholder.textColor = UIColor.appRedColor
+            }
+        } else if textField == confirmEmailAddress {
+            if let text = textField.text, text.isValidEmail() {
+                confirmEmailPlaceholder.textColor = UIColor.gray
+            } else {
+                confirmEmailPlaceholder.textColor = UIColor.appRedColor
+            }
+        } else if textField == passwordTextField {
+            if let text = textField.text, text.count == 1 && string.isEmpty {
+                passwordPlaceholder.textColor = UIColor.appRedColor
+            } else {
+                passwordPlaceholder.textColor = UIColor.gray
+            }
+        }
+        return true
     }
 }

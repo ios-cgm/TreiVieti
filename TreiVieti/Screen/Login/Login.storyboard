@@ -483,8 +483,11 @@
                     </view>
                     <connections>
                         <outlet property="confirmEmailAddress" destination="2g2-dY-dF2" id="50F-r3-viU"/>
+                        <outlet property="confirmEmailPlaceholder" destination="ebM-LT-xi5" id="5N9-m7-NsY"/>
                         <outlet property="createAccountButton" destination="V2b-hx-5wV" id="5hf-V7-JoC"/>
                         <outlet property="emailAddressTextField" destination="6dV-kC-eFd" id="1ZS-Jw-Fdk"/>
+                        <outlet property="emailPlaceholder" destination="moA-3X-FsM" id="jiF-rn-SX5"/>
+                        <outlet property="passwordPlaceholder" destination="h3Q-1h-1zP" id="bfb-3J-0zW"/>
                         <outlet property="passwordTextField" destination="SZd-fg-36e" id="w2b-6X-gMQ"/>
                         <outlet property="spinnerView" destination="bqL-wl-ae1" id="88w-xJ-DJ8"/>
                     </connections>
