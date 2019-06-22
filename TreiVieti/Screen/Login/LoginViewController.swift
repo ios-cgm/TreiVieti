@@ -22,8 +22,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailTextField.text = "tudor1@gmail.com"
-        passwordTextField.text = "123456"
+//        emailTextField.text = "tudor1@gmail.com"
+//        passwordTextField.text = "123456"
     }
 
     @IBAction func unwindToLoginVC(segue: UIStoryboardSegue) {
@@ -69,14 +69,14 @@ extension LoginViewController: UITextFieldDelegate {
             } else {
                 emailPlaceholder.textColor = UIColor.appRedColor
             }
+        } else if textField == passwordTextField {
+            if let text = textField.text, text.count == 1 && string.isEmpty {
+                passwordPlaceholder.textColor = UIColor.appRedColor
+            } else {
+                passwordPlaceholder.textColor = UIColor.gray
+            }
         }
-//        else if textField == passwordTextField {
-//            if let text = textField.text, text.isEmpty {
-//                passwordPlaceholder.textColor = UIColor.appRedColor
-//            } else {
-//                passwordPlaceholder.textColor = UIColor.gray
-//            }
-//        }
+
         return true
     }
 }
