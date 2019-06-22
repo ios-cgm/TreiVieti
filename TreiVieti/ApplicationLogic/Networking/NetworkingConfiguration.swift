@@ -44,13 +44,13 @@ class Networking {
             }
         }
     }
-    func register(registerModel: RegisterModel, success: @escaping () -> Void, failure: @escaping (Error) -> Void) {
+    func register(registerModel: RegisterModel, success: @escaping () -> Void, failure: @escaping (AuthError) -> Void) {
         let endpointURL = Endpoint.endpointURL(.register)()
         if let jsonData = try? JSONEncoder().encode(registerModel) {
             let decoded = try? JSONSerialization.jsonObject(with: jsonData, options: [])
             Alamofire.request(endpointURL, method: .post, parameters: decoded as? [String: Any] as! HTTPHeaders).responseJSON { response in
                 if let json = response.result.value as? [String: Any] {
-                    if let token = json["accessToken"] as? String {
+                    if let token = json["token"] as? String {
                         KeychainCoordinator.saveToken(token: token)
                         success()
                     } else if json["email"] != nil {

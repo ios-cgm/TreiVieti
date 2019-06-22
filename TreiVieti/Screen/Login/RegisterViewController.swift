@@ -42,10 +42,14 @@ class RegisterViewController: UIViewController {
                 self?.view.window?.rootViewController = UIStoryboard(name: "Home", bundle: nil).instantiateInitialViewController()
                 self?.saveEmail(email)
             }, failure: { [weak self] (error) in
-                self?.showErrorOnRegister()
+                self?.showErrorOnRegister("Something went wrong. Please try again.")
             })
         }) { [weak self] (error) in
-            self?.showErrorOnRegister()
+            if error == AuthError.emailAlreadyTaken {
+                self?.showErrorOnRegister("The email has already been taken.")
+            } else {
+                self?.showErrorOnRegister("Something went wrong. Please try again.")
+            }
         }
     }
 
@@ -59,8 +63,8 @@ class RegisterViewController: UIViewController {
         spinnerView.stopAnimating()
     }
 
-    func showErrorOnRegister() {
-        UIAlertController.showOKAlert(from: self, message: "Something went wrong. Please try again.")
+    func showErrorOnRegister(_ msg: String) {
+        UIAlertController.showOKAlert(from: self, message: msg)
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
