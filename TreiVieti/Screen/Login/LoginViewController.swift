@@ -31,9 +31,8 @@ class LoginViewController: UIViewController {
         guard let email = emailTextField.text, let password = passwordTextField.text else {
             return
         }
-
-        network.login(loginModel: LoginModel(email: email, password: password), success: {
-            print("mare success")
+        network.login(loginModel: LoginModel(email: email, password: password), success: { [weak self] in
+            self?.view.window?.rootViewController = UIStoryboard(name: "Home", bundle: nil).instantiateInitialViewController()
         }) { (error) in
             print(error.localizedDescription)
         }
@@ -87,5 +86,18 @@ class NibLoadingView: UIView {
             view.leftAnchor.constraint(equalTo: self.leftAnchor),
             view.rightAnchor.constraint(equalTo: self.rightAnchor)
             ])
+    }
+}
+
+extension UIAlertController {
+    @discardableResult
+    static func showOKAlert(from viewController: UIViewController, message: String, title: String? = "", completion: (() -> Void)? = nil) -> UIAlertController {
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            completion?()
+        }
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertController.addAction(okAction)
+        viewController.present(alertController, animated: true, completion: nil)
+        return alertController
     }
 }
