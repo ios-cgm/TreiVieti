@@ -18,7 +18,12 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var spinnerView: UIActivityIndicatorView!
     let network = Networking()
 
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton! {
+        didSet {
+            loginButton.alpha = 0.3
+            loginButton.isEnabled = false
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,7 +81,26 @@ extension LoginViewController: UITextFieldDelegate {
                 passwordPlaceholder.textColor = UIColor.gray
             }
         }
+        if emailPlaceholder.textColor == UIColor.gray || passwordPlaceholder.textColor == UIColor.gray {
+            if textField == passwordTextField, let text = textField.text, text.count != 1 && !string.isEmpty {
+                loginButton.alpha = 1
+                loginButton.isEnabled = true
+            } else if let passwordText = passwordTextField.text, passwordText.count == 1 && string.isEmpty {
+                loginButton.alpha = 0.3
+                loginButton.isEnabled = false
+            }
+        } else {
+            loginButton.alpha = 0.3
+            loginButton.isEnabled = false
 
+        }
+        return true
+    }
+    
+    var shouldEnableLoginButton: Bool {
+        if emailPlaceholder.textColor == UIColor.appRedColor || passwordPlaceholder.textColor == UIColor.appRedColor || passwordTextField.text?.isEmpty ?? true  {
+            return false
+        }
         return true
     }
 }
