@@ -410,7 +410,14 @@
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="createAccountButtonTapped:" destination="8ay-Bd-dfB" eventType="touchUpInside" id="gFR-My-LYE"/>
+                                                </connections>
                                             </button>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="bqL-wl-ae1">
+                                                <rect key="frame" x="177" y="348" width="20" height="20"/>
+                                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -421,12 +428,14 @@
                                             <constraint firstItem="5hn-Tc-5Ay" firstAttribute="leading" secondItem="mZe-1f-tea" secondAttribute="leading" constant="20" id="BDU-DZ-fsK"/>
                                             <constraint firstItem="kiZ-dT-TCX" firstAttribute="top" secondItem="O5P-cW-pCZ" secondAttribute="bottom" constant="20" id="Dd4-qP-Swm"/>
                                             <constraint firstItem="Ngy-DL-Lsh" firstAttribute="top" secondItem="mZe-1f-tea" secondAttribute="top" constant="10" id="IJi-Fo-RQ8"/>
+                                            <constraint firstItem="bqL-wl-ae1" firstAttribute="centerX" secondItem="V2b-hx-5wV" secondAttribute="centerX" id="Kgg-wi-mn2"/>
                                             <constraint firstItem="O5P-cW-pCZ" firstAttribute="leading" secondItem="mZe-1f-tea" secondAttribute="leading" constant="20" id="Klh-DD-i7h"/>
                                             <constraint firstItem="O5P-cW-pCZ" firstAttribute="top" secondItem="5hn-Tc-5Ay" secondAttribute="bottom" constant="20" id="Onm-Vh-cNi"/>
                                             <constraint firstItem="kiZ-dT-TCX" firstAttribute="leading" secondItem="mZe-1f-tea" secondAttribute="leading" constant="20" id="Pjs-mo-RO9"/>
                                             <constraint firstAttribute="trailing" secondItem="V2b-hx-5wV" secondAttribute="trailing" constant="20" id="RyU-L1-DtW"/>
                                             <constraint firstAttribute="trailing" secondItem="5hn-Tc-5Ay" secondAttribute="trailing" constant="20" id="Uki-F4-Gjq"/>
                                             <constraint firstItem="5hn-Tc-5Ay" firstAttribute="top" secondItem="Ngy-DL-Lsh" secondAttribute="bottom" constant="30" id="dJr-gi-NCR"/>
+                                            <constraint firstItem="bqL-wl-ae1" firstAttribute="centerY" secondItem="V2b-hx-5wV" secondAttribute="centerY" id="eeE-Lf-qIH"/>
                                             <constraint firstAttribute="trailing" secondItem="O5P-cW-pCZ" secondAttribute="trailing" constant="20" id="lhe-vp-FdY"/>
                                             <constraint firstItem="V2b-hx-5wV" firstAttribute="leading" secondItem="mZe-1f-tea" secondAttribute="leading" constant="20" id="vom-Lz-y0O"/>
                                         </constraints>
@@ -472,6 +481,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2gl-uX-GLk"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmEmailAddress" destination="2g2-dY-dF2" id="50F-r3-viU"/>
+                        <outlet property="createAccountButton" destination="V2b-hx-5wV" id="5hf-V7-JoC"/>
+                        <outlet property="emailAddressTextField" destination="6dV-kC-eFd" id="1ZS-Jw-Fdk"/>
+                        <outlet property="passwordTextField" destination="SZd-fg-36e" id="w2b-6X-gMQ"/>
+                        <outlet property="spinnerView" destination="bqL-wl-ae1" id="88w-xJ-DJ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NxG-F0-1Sb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="cYe-fc-gW6" userLabel="Exit" sceneMemberID="exit"/>

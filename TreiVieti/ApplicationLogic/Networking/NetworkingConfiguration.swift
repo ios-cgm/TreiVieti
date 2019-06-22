@@ -64,12 +64,12 @@ class Networking {
 
     }
     func getProfile(success: @escaping () -> Void, failure: @escaping (Error) -> Void) {
-        guard let token = KeychainCoordinator.token else {
-            failure(ProfileError.noToken)
-            return
-        }
-        let httpHeaders = ["token": token]
-        let endpointURL = Endpoint.endpointURL(.profile)()
+//        guard let token = KeychainCoordinator.token else {
+//            failure(ProfileError.noToken)
+//            return
+//        }
+//        let httpHeaders = ["token": token]
+//        let endpointURL = Endpoint.endpointURL(.profile)()
 //        Alamofire.request(endpointURL, method: .get, headers: httpHeaders as? [String: Any] as! HTTPHeaders).responseJSON { response in
 //            if let json = response.result.value as? [String: Any] {
 //                print(json)
