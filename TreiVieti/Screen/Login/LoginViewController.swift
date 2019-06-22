@@ -15,8 +15,11 @@ class LoginViewController: UIViewController {
     @IBOutlet var emailPlaceholder: UILabel!
     @IBOutlet var passwordPlaceholder: UILabel!
     
+    @IBOutlet weak var spinnerView: UIActivityIndicatorView!
     let network = Networking()
 
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         emailTextField.text = "tudor1@gmail.com"
@@ -31,14 +34,22 @@ class LoginViewController: UIViewController {
         guard let email = emailTextField.text, let password = passwordTextField.text else {
             return
         }
+        setLoading(true)
         network.login(loginModel: LoginModel(email: email, password: password), success: { [weak self] in
             self?.view.window?.rootViewController = UIStoryboard(name: "Home", bundle: nil).instantiateInitialViewController()
-        }) { (error) in
+        }) { [weak self] (error) in
             print(error.localizedDescription)
+            self?.setLoading(false)
         }
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
+    }
+
+    func setLoading(_ loading: Bool) {
+        let buttonTitle = loading ? nil : "LOGIN"
+        loginButton.setTitle(buttonTitle, for: .normal)
+        spinnerView.isHidden = !loading
     }
 }
 

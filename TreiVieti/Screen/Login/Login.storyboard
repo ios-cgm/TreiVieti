@@ -164,6 +164,9 @@
                                                     <action selector="loginButtonTapped:" destination="v9i-HL-fxy" eventType="touchUpInside" id="kJe-TQ-5F2"/>
                                                 </connections>
                                             </button>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="xoE-dc-Zhb">
+                                                <rect key="frame" x="177" y="359" width="20" height="20"/>
+                                            </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -178,6 +181,7 @@
                                             <constraint firstAttribute="trailing" secondItem="Sbj-Em-O09" secondAttribute="trailing" constant="20" id="PMg-52-pB9"/>
                                             <constraint firstItem="I3G-u5-Nq0" firstAttribute="leading" secondItem="Loq-Qb-85I" secondAttribute="leading" constant="20" id="WDG-oV-v59"/>
                                             <constraint firstItem="I3G-u5-Nq0" firstAttribute="top" secondItem="Sbj-Em-O09" secondAttribute="bottom" constant="10" id="Wr5-4c-oUS"/>
+                                            <constraint firstItem="xoE-dc-Zhb" firstAttribute="centerY" secondItem="ubo-Wu-bCf" secondAttribute="centerY" id="aS5-f5-G7Q"/>
                                             <constraint firstItem="7rG-aE-0Ou" firstAttribute="leading" secondItem="Loq-Qb-85I" secondAttribute="leading" constant="50" id="afB-6y-19a"/>
                                             <constraint firstItem="Sbj-Em-O09" firstAttribute="top" secondItem="Loq-Qb-85I" secondAttribute="top" constant="10" id="d5f-4G-DlK"/>
                                             <constraint firstAttribute="trailing" secondItem="nqb-hB-e5y" secondAttribute="trailing" constant="20" id="hAh-sV-UCo"/>
@@ -232,8 +236,10 @@
                     <connections>
                         <outlet property="emailPlaceholder" destination="D1c-kX-iwj" id="uR9-2n-7bm"/>
                         <outlet property="emailTextField" destination="J9C-xE-1y5" id="Kju-9G-5Mn"/>
+                        <outlet property="loginButton" destination="ubo-Wu-bCf" id="IUs-jd-BqI"/>
                         <outlet property="passwordPlaceholder" destination="bg6-6g-PYX" id="lHV-rD-3cj"/>
                         <outlet property="passwordTextField" destination="zWK-Xw-KPo" id="K7t-Qn-PzN"/>
+                        <outlet property="spinnerView" destination="xoE-dc-Zhb" id="e3e-vp-VSF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vzx-R2-99G" userLabel="First Responder" sceneMemberID="firstResponder"/>
