@@ -67,7 +67,10 @@
                                                                 <rect key="frame" x="0.0" y="17" width="334" height="33"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="v9i-HL-fxy" id="VAg-le-hEH"/>
+                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -115,7 +118,10 @@
                                                                 <rect key="frame" x="0.0" y="17" width="334" height="33"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="v9i-HL-fxy" id="Auf-oi-CHv"/>
+                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -220,6 +226,10 @@
                         <viewLayoutGuide key="safeArea" id="Rtx-WT-Df0"/>
                     </view>
                     <navigationItem key="navigationItem" id="EOE-jN-zaj"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="J9C-xE-1y5" id="Kju-9G-5Mn"/>
+                        <outlet property="passwordTextField" destination="zWK-Xw-KPo" id="K7t-Qn-PzN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vzx-R2-99G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -268,7 +278,7 @@
                                                                 <rect key="frame" x="0.0" y="17" width="334" height="33"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -308,7 +318,7 @@
                                                                 <rect key="frame" x="0.0" y="17" width="334" height="33"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -348,7 +358,7 @@
                                                                 <rect key="frame" x="0.0" y="17" width="334" height="33"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -425,7 +435,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="M1N-zN-4xU" secondAttribute="bottom" constant="20" id="2zA-tp-IS6"/>
                                     <constraint firstItem="aXm-c2-4XR" firstAttribute="leading" secondItem="IPW-gM-bCJ" secondAttribute="leading" id="LbH-tE-se5"/>
