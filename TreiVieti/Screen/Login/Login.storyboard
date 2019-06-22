@@ -164,8 +164,9 @@
                                                     <action selector="loginButtonTapped:" destination="v9i-HL-fxy" eventType="touchUpInside" id="kJe-TQ-5F2"/>
                                                 </connections>
                                             </button>
-                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="xoE-dc-Zhb">
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="xoE-dc-Zhb">
                                                 <rect key="frame" x="177" y="359" width="20" height="20"/>
+                                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -177,6 +178,7 @@
                                             <constraint firstItem="7rG-aE-0Ou" firstAttribute="top" secondItem="8eD-CA-oI6" secondAttribute="bottom" constant="5" id="F4L-qM-cU2"/>
                                             <constraint firstItem="nqb-hB-e5y" firstAttribute="leading" secondItem="Loq-Qb-85I" secondAttribute="leading" constant="20" id="FzB-4g-2sk"/>
                                             <constraint firstItem="8eD-CA-oI6" firstAttribute="leading" secondItem="Loq-Qb-85I" secondAttribute="leading" constant="20" id="GG3-lj-64N"/>
+                                            <constraint firstItem="xoE-dc-Zhb" firstAttribute="centerX" secondItem="ubo-Wu-bCf" secondAttribute="centerX" id="HIx-bV-xnw"/>
                                             <constraint firstAttribute="trailing" secondItem="7rG-aE-0Ou" secondAttribute="trailing" constant="20" id="HKu-Gr-1Bd"/>
                                             <constraint firstAttribute="trailing" secondItem="Sbj-Em-O09" secondAttribute="trailing" constant="20" id="PMg-52-pB9"/>
                                             <constraint firstItem="I3G-u5-Nq0" firstAttribute="leading" secondItem="Loq-Qb-85I" secondAttribute="leading" constant="20" id="WDG-oV-v59"/>
