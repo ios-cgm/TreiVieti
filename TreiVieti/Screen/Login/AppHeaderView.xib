@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppHeaderView" customModule="TreiVieti" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ka6-PA-GCE">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="treivieti_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="mkb-Wn-Ji5">
+                    <rect key="frame" x="78.5" y="31.5" width="257" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="85" id="DKt-xw-wdg"/>
+                        <constraint firstAttribute="width" constant="257" id="sa9-xy-mBY"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ka6-PA-GCE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1Qp-Oe-HX3"/>
+                <constraint firstItem="mkb-Wn-Ji5" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="1jk-ZH-iji"/>
+                <constraint firstItem="ka6-PA-GCE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BJl-3r-s71"/>
+                <constraint firstItem="ka6-PA-GCE" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Khb-18-4NX"/>
+                <constraint firstItem="ka6-PA-GCE" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="gGk-QH-hA6"/>
+                <constraint firstItem="mkb-Wn-Ji5" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="sYF-To-e6B"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-112" y="-50.374812593703155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_bg" width="375" height="200"/>
+        <image name="treivieti_logo_white" width="257" height="85"/>
+    </resources>
+</document>

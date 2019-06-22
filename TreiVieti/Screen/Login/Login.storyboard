@@ -17,7 +17,33 @@
                     <view key="view" contentMode="scaleToFill" id="HIw-2Q-g0v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izI-zM-Xge" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwC-by-6UX" customClass="AppHeaderView" customModule="TreiVieti" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="A60-sf-cDV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cwC-by-6UX" firstAttribute="leading" secondItem="izI-zM-Xge" secondAttribute="leading" id="2KU-Wh-7rM"/>
+                                    <constraint firstItem="cwC-by-6UX" firstAttribute="top" secondItem="izI-zM-Xge" secondAttribute="top" id="JyN-XB-NOI"/>
+                                    <constraint firstAttribute="trailing" secondItem="cwC-by-6UX" secondAttribute="trailing" id="mJk-K0-Dfq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="izI-zM-Xge" firstAttribute="top" secondItem="HIw-2Q-g0v" secondAttribute="top" id="MlF-sx-pY1"/>
+                            <constraint firstItem="izI-zM-Xge" firstAttribute="leading" secondItem="Rtx-WT-Df0" secondAttribute="leading" id="Sgg-x6-Ue8"/>
+                            <constraint firstItem="Rtx-WT-Df0" firstAttribute="trailing" secondItem="izI-zM-Xge" secondAttribute="trailing" id="iOL-PT-fQ3"/>
+                            <constraint firstItem="Rtx-WT-Df0" firstAttribute="bottom" secondItem="izI-zM-Xge" secondAttribute="bottom" id="t2Y-RN-1GD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Rtx-WT-Df0"/>
                     </view>
                     <navigationItem key="navigationItem" id="EOE-jN-zaj"/>
@@ -26,13 +52,27 @@
             </objects>
             <point key="canvasLocation" x="813.04347826086962" y="-24.107142857142858"/>
         </scene>
+        <!--Register View Controller-->
+        <scene sceneID="Apb-au-GpS">
+            <objects>
+                <viewController id="8ay-Bd-dfB" customClass="RegisterViewController" customModule="TreiVieti" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jbq-UJ-1Ud">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2gl-uX-GLk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NxG-F0-1Sb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1743" y="-24"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cmi-U5-59w">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8ZO-4o-pTi" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="8ZO-4o-pTi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y7a-o1-Zff">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
