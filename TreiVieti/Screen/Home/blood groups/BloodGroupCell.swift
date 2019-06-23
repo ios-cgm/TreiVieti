@@ -9,7 +9,11 @@
 import UIKit
 
 class BloodGroupCell : UICollectionViewCell {
-    var record : BloodGroupModel?
+    var record : BloodGroupModel? {
+        didSet {
+            self.refresh()
+        }
+    }
     var lblBloodGroup : UILabel?
     var lblFillPercentage : UILabel?
     var fillColor : UIColor = UIColor.appRedColor
@@ -45,7 +49,7 @@ class BloodGroupCell : UICollectionViewCell {
         labelFill.textColor = UIColor.appTextColor
         labelFill.font = UIFont(name: "Poppins-Regular", size: 14)
         self.addSubview(labelFill)
-        self.lblBloodGroup = labelFill
+        self.lblFillPercentage = labelFill
     }
     
     // MARK: draw
@@ -71,5 +75,11 @@ class BloodGroupCell : UICollectionViewCell {
         context.addPath(fillPath);
         context.setFillColor(fillColor.cgColor);
         context.fillPath();
+    }
+    
+    func refresh() {
+        self.lblBloodGroup?.text = self.record?.groupName
+        self.lblFillPercentage?.text = "\(self.record?.fillPercentage ?? 0)%"
+        self.setNeedsLayout();
     }
 }
