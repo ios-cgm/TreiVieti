@@ -15,5 +15,7 @@ extension UIColor {
     static var appGrayColor: UIColor {
         return UIColor.init(red: 120, green: 121, blue: 145, alpha: 1)
     }
-
+    static var appTextColor: UIColor {
+        return UIColor.init(red: 0.31, green: 0.31, blue: 0.44, alpha: 1)
+    }
 }
