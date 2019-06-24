@@ -24,10 +24,10 @@ static NSString *reuseIdentifier = @"bloodGroup";
     if (!self) {
         return nil;
     }
-    _bloodGroups = @[[BloodGroup groupWithName:@"A" fill:rand()]
-                     , [BloodGroup groupWithName:@"B" fill:rand()]
-                     , [BloodGroup groupWithName:@"AB" fill:rand()]
-                     , [BloodGroup groupWithName:@"0" fill:rand()]];
+    _bloodGroups = @[[BloodGroup groupWithName:@"A" fill:22]
+                     , [BloodGroup groupWithName:@"B" fill:17]
+                     , [BloodGroup groupWithName:@"AB" fill:65]
+                     , [BloodGroup groupWithName:@"0" fill:7]];
     [self commonInit];
     return self;
 }
